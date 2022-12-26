@@ -8,7 +8,7 @@
       animation-duration: 1.5s;
       animation-delay: 0.5s;
       background-image: url('./images/bg-2.jpg');
-    ">
+                ">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-5 bg-light p-5">
