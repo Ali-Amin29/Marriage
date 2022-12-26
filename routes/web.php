@@ -17,12 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/login', function () {
-    return view('login');
-});
-Route::get('/register', function () {
-    return view('register');
-});
+// Route::get('/login', function () {
+//     return view('login');
+// });
+// Route::get('/register', function () {
+//     return view('register');
+// });
 Route::get('/service', function () {
     return view('services');
 });
@@ -59,13 +59,10 @@ Route::get('user-search', function () {
 Route::get('supplier-service', function () {
     return view('DashBoardSupplierService.supplier-services');
 });
-Auth::routes();
+Route::get('coupon', function () {
+    return view('DashBoardSupplierService.coupon');
+});
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 

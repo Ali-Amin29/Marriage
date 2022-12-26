@@ -22,6 +22,8 @@ tabindex="0"
     @yield('container.Register')
     {{-- Services --}}
     @yield('container.services')
+    {{-- comment --}}
+    @yield('container.comments')
 
     @include('Include.footer')
     @include('Include.script')
