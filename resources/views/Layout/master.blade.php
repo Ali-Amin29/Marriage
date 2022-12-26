@@ -1,11 +1,6 @@
 @include('Include.header')
 
-<body
-data-bs-spy="scroll"
-data-bs-target="#navigation"
-data-bs-offset="0"
-tabindex="0"
->
+<body data-bs-spy="scroll" data-bs-target="#navigation" data-bs-offset="0" tabindex="0">
     @include('Include.nav')
 
     {{--  Home Page  --}}
@@ -20,6 +15,8 @@ tabindex="0"
     @yield('container.Login')
     {{-- Register Form --}}
     @yield('container.Register')
+    {{-- register-supplier --}}
+    @yield('container.register-supplier')
     {{-- Services --}}
     @yield('container.services')
     {{-- comment --}}

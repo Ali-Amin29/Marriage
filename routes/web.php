@@ -17,12 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-// Route::get('/login', function () {
-//     return view('login');
-// });
-// Route::get('/register', function () {
-//     return view('register');
-// });
+Route::get('supplier-register', function () {
+    return view('register-supplier-service');
+});
+
 Route::get('/service', function () {
     return view('services');
 });
@@ -59,9 +57,7 @@ Route::get('user-search', function () {
 Route::get('supplier-service', function () {
     return view('DashBoardSupplierService.supplier-services');
 });
-Route::get('coupon', function () {
-    return view('DashBoardSupplierService.coupon');
-});
+
 
 
 Auth::routes();
