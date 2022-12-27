@@ -58,3 +58,9 @@ Route::get('supplier-service', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/checkregister', function () {
+    return view('RegisterCheck');
+});
+
+Route::get('/ServiceRegister', [\App\Http\Controllers\Auth\ServiceProvider::class, 'showRegistrationForm'])->name('ServiceRegister');

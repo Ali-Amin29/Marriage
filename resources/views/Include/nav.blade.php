@@ -37,7 +37,7 @@
                         <a class="nav-link download-btn" href="{{ route('login') }}">تسجيل دخول</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link download-btn" href="{{ route('register') }}">انشاء حساب</a>
+                        <a class="nav-link download-btn" href="{{ url('/checkregister') }}">انشاء حساب</a>
                     </li>
                 </ul>
             </div>

@@ -1,5 +1,5 @@
 @extends('Layout.master')
-@section('container.Register')
+@section('container.UserRegister')
     <!-- ================ Register Section Start Here =============== -->
     <div class="bg-header">
         <div class="wow fadeInUp animated" data-wow-duration="1.5s" data-wow-delay=".5s"
