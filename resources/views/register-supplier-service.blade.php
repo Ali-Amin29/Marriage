@@ -1,8 +1,8 @@
 @extends('Layout.master')
 @section('container.register-supplier')
     <!--***********************************
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Content body Start
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ***********************************-->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Content body Start
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ***********************************-->
     <div class="container align-items-center service-register bg-header"">
         <div class=" row">
             <div class="col-xl-12 col-xxl-12  pt-5">
@@ -122,12 +122,12 @@
                                                                         </div>
 
                                                                         <!-- <h4 class="text-center mb-3">Enter OTP</h4>
-                                                                                                                                                                                             <div class="mt-5 mb-2 d-flex justify-content-evenly gap-2 userInput">
-                                                                                                                                                                                                                                        <input type="text" maxlength="1" class="btn btn-outline-danger otpinput" />
-                                                                                                                                                                                                                                        <input type="text"  maxlength="1"class="btn btn-outline-danger otpinput" />
-                                                                                                                                                                                                                                        <input type="text" maxlength="1" class="btn btn-outline-danger otpinput" />
-                                                                                                                                                                                                                                        <input type="text" maxlength="1" class="btn btn-outline-danger otpinput" />
-                                                                                                                                                                                                                                    </div> -->
+                                                                                                                                                                                                 <div class="mt-5 mb-2 d-flex justify-content-evenly gap-2 userInput">
+                                                                                                                                                                                                                                            <input type="text" maxlength="1" class="btn btn-outline-danger otpinput" />
+                                                                                                                                                                                                                                            <input type="text"  maxlength="1"class="btn btn-outline-danger otpinput" />
+                                                                                                                                                                                                                                            <input type="text" maxlength="1" class="btn btn-outline-danger otpinput" />
+                                                                                                                                                                                                                                            <input type="text" maxlength="1" class="btn btn-outline-danger otpinput" />
+                                                                                                                                                                                                                                        </div> -->
 
                                                                     </div>
                                                                 </div>
@@ -214,4 +214,5 @@
                 </div>
             </div>
         </div>
-    @endsection
+    </div>
+@endsection
