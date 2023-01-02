@@ -25,30 +25,26 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login');
 });
-Route::get('/register', function () {
-    return view('register-supplier-service');
-});
+// Route::get('/register', function () {
+//     return view('user_register');
+// });
 
 
-Route::get('/check', function (Request $request) {
-    dd($request->number, $request->password);
-
-});
+// Route::get('/check', function (Request $request) {
+//     dd($request->number, $request->password);
+// });
 
 
 Route::get('/customer', function () {
     return view('DashBoardCustomer.index');
-
 });
 
 Route::get('/supervisor', function () {
     return view('DashBoardSuperVisor.index');
-
 });
 
 Route::get('/supplier', function () {
     return view('DashBoardSupplierService.index');
-
 });
 
 
@@ -67,7 +63,7 @@ Route::get('/supplier', function () {
 
 Route::get('supplier-register', function () {
     return view('register-supplier-service');
-});
+})->name('supplier-register');
 
 Route::get('/service', function () {
     return view('services');

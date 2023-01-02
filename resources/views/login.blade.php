@@ -28,7 +28,8 @@
                             <div class="line"></div>
                         </div>
                         <div class="row flex-column align-items-center">
-                            <a class="text-center mb-5 small" href="{{ url('register') }}">هل انت مزود خدمة ؟ سجل من هنا</a>
+                            <a class="text-center mb-5 small" href="{{ route('supplier-register') }}">هل انت مزود خدمة ؟
+                                سجل من هنا</a>
                         </div>
                     </form>
                 </div>
