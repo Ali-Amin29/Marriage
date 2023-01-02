@@ -21,4 +21,8 @@
     <link rel="stylesheet" href={{ asset('css/font-awesome.min.css') }} />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link href="./vendor/jquery-smartwizard/dist/css/smart_wizard.min.css" rel="stylesheet">
+    {{--  Telphone Check  --}}
+    <link href="./build/css/intlTelInput.css" rel="stylesheet">
+    <link href="./build/css/demo.css" rel="stylesheet">
+
 </head>
