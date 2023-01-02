@@ -34,10 +34,10 @@
                 </ul>
                 <ul class="navbar-nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link download-btn" href="{{ route('login') }}">تسجيل دخول</a>
+                        <a class="nav-link download-btn" href="{{ url('login') }}">تسجيل دخول</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link download-btn" href="{{ route('register') }}">انشاء حساب</a>
+                        <a class="nav-link download-btn" href="{{ url('register') }}">انشاء حساب</a>
                     </li>
                 </ul>
             </div>
