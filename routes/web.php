@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\ProviderController;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,10 +14,39 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
 // User routes
 Route::get('/', function () {
     return view('index');
 });
+
+
+Route::get('/customer', function () {
+    return view('DashBoardCustomer.index');
+});
+
+Route::get('/supervisor', function () {
+    return view('DashBoardSuperVisor.index');
+});
+
+Route::get('/supplier', function () {
+    return view('DashBoardSupplierService.index');
+});
+
+
+// search Route for supplier
+
+Route::get("search",[ProviderController::class,'search']);
+
+
+
+Route::get('supplier-register', function () {
+    return view('register-supplier-service');
+})->name('supplier-register');
 
 Route::get('/service', function () {
     return view('services');
@@ -54,7 +84,3 @@ Route::get('user-search', function () {
 Route::get('supplier-service', function () {
     return view('DashBoardSupplierService.supplier-services');
 });
-// login and registation
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

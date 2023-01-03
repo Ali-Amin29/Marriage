@@ -44,8 +44,8 @@ h2 a,
 h3 a,
 h4 a,
 h5 a,
-h6 a { 
-    color: inherit 
+h6 a {
+    color: inherit
 }
 h1 {
     font-size: 60px;
@@ -333,15 +333,15 @@ label {
     overflow: hidden
 }
 .clear{clear:both}
-.uppercase { 
+.uppercase {
     text-transform: uppercase
 }
-.capitalize { 
+.capitalize {
     text-transform: capitalize
 }
 .owl-carousel {
-    touch-action: manipulation; 
-}  
+    touch-action: manipulation;
+}
 
 /* ============= 1. IMPORT GOOGLE FONT ============= */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
@@ -382,7 +382,7 @@ header {
 .copyright-area-container{
     background: linear-gradient(to right, #ea7a9a 0%, #fac7b6 100%);
 
-} 
+}
 .phone{
   direction:ltr
 }
@@ -1017,7 +1017,7 @@ header {
   background: #df314d;
 }
 @media (min-width: 576px) {
-  
+
   h4 {
     font-size: 1.5rem;
     line-height: 1.5;
@@ -1744,7 +1744,7 @@ label {
   position: relative;
 }
 /* label:after {
-    content:"\f078";   
+    content:"\f078";
     font-family: "FontAwesome";
     font-size: 11px;
     color:#aaa;
@@ -1758,7 +1758,7 @@ label:before {
   /* content: "";
   right: 4px;
   top: 0px;
-  width:23px; 
+  width:23px;
   height: 18px;
   background: #fff;
   position: absolute;
@@ -2442,14 +2442,14 @@ color:#ea7a9a !important;
   .section-heading {
     width: 55%;
   }
- 
+
   .single-address .media-left {
     left: 30px;
   }
   .about-area {
     padding-bottom: 80px;
   }
- 
+
 
 }
 
@@ -2458,7 +2458,7 @@ color:#ea7a9a !important;
   .navbar-expand-md .navbar-nav .nav-link {
     padding: 20px 5px;
   }
- 
+
   .slider h1 {
     font-size: 48px;
   }
@@ -2495,7 +2495,7 @@ color:#ea7a9a !important;
   .single-address .media-left {
     left: 0;
   }
- 
+
   .contact-map-size {
     width: 100%;
   }
@@ -2668,14 +2668,14 @@ color:#ea7a9a !important;
   .hero-text p.he-p {
     padding: 0;
   }
- 
+
   .how-work-tab ul {
     display: flow-root;
   }
   .how-work-tab ul li {
     width: 100%;
   }
-  	
+
 
   .navbar-expand-lg .navbar-nav li a.download-btn {
     margin-bottom: 15px;
@@ -2697,9 +2697,9 @@ color:#ea7a9a !important;
   .single-address .media-left {
     left: 55px;
   }
- 
+
   .price-item .price-item-inner .price-top {
     padding-bottom: 50px;
-    
+
 }
 }
