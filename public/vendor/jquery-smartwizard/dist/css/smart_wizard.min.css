@@ -144,14 +144,14 @@
 .sw-theme-default > .tab-content > .tab-pane {
     padding: 10px;
 }
-.sw-theme-default .toolbar > .btn {
+/* .sw-theme-default .toolbar > .btn {
     color: #fff;
     background-color: #17a2b8;
     border: 1px solid #17a2b8;
     padding: 0.375rem 0.75rem;
     border-radius: 0.25rem;
     font-weight: 400;
-}
+} */
 .sw-theme-default > .nav {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1) !important;
 }

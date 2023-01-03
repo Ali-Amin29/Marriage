@@ -8,7 +8,7 @@
                     <form class="row flex-column align-items-center" method="get" action="{{ url('check') }}">
                         <div class="form-group col-md-8">
                             <label> <strong>رقم الهاتف</strong></label>
-                            <input type="tel" id="phone" class="form-control  border border-primary text-primary"
+                            <input type="number" class="form-control  border border-primary text-primary"
                                 id="floatingInputEmail" name="number" placeholder="ادخل رقم الهاتف" />
                         </div>
                         <div class="form-group col-md-8">
