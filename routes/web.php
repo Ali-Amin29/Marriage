@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProviderController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 /*
@@ -47,6 +48,10 @@ Route::get('/supplier', function () {
     return view('DashBoardSupplierService.index');
 });
 
+
+// search Route for supplier
+
+Route::get("search",[ProviderController::class,'search']);
 
 
 

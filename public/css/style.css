@@ -3054,7 +3054,7 @@ textarea.form-control.is-invalid {
 }
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
-    line-height: 10%;
+    /* line-height: 10%; */
 }
 
 a.btn.disabled,
