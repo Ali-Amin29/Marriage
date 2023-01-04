@@ -51,7 +51,7 @@ Route::get('/supplier', function () {
 
 // search Route for supplier
 
-Route::get("search",[ProviderController::class,'search']);
+Route::get("search", [ProviderController::class, 'search']);
 
 
 
@@ -105,4 +105,9 @@ Route::get('user-search', function () {
 });
 Route::get('supplier-service', function () {
     return view('DashBoardSupplierService.supplier-services');
+});
+
+Route::controller(App\Http\Controllers\Providers\ProviderController::class)->group(function () {
+    Route::get('/FilteProvider/{id}',  'index');
+    Route::get('search', 'search');
 });

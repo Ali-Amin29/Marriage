@@ -13,13 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('provider_user', function (Blueprint $table) {
+        Schema::create('offices', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('userId');
-            $table->foreignId('providerId');
-            $table->date('subscriptionDate');
-            $table->enum('status', ['accept', 'reject'])->default('reject');
-            $table->timestamps('');
+            $table->string('officeName');
+            $table->decimal('rate', 2, 1);
+            $table->timestamps();
         });
     }
 
@@ -30,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('provider_user');
+        Schema::dropIfExists('offices');
     }
 };
