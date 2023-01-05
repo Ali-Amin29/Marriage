@@ -5,17 +5,17 @@
         <div class="slider">
             <div class="container">
                 <div class="row">
-                    <div class="offset-md-4 col-md-8">
+                    <div class="offset-md-8 col-md-4">
                         <div class="hero-text mr-ri-l">
                             <h1>ابحث عن شريك العمر</h1>
                             <p>طريقك الأفضل للوصول لنصفك الآخر بسهولة وآمان وخصوصية تامة</p>
-                            <div class="col-lg-6">
+                            {{-- <div class="col-lg-6">
                                 <div class="form-group">
                                     <input type="text" name="search" id="search" placeholder="ادخل اسم مزود الخدمة"
                                         class="form-control W-25" onfocus="this.value=''">
                                 </div>
                                 <div id="search_list"></div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

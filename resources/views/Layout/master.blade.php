@@ -21,7 +21,8 @@
     @yield('container.services')
     {{-- comment --}}
     @yield('container.comments')
-
+    {{-- search --}}
+    @yield('container.search')
     @include('Include.footer')
     @include('Include.script')
 </body>
