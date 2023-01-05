@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Providers;
 
 use App\Models\Providers\Provider;
 use App\Models\Offices\Office;
+use App\Models\Services\Service;
+
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
@@ -11,11 +13,11 @@ use Illuminate\Http\Request;
 class ProviderController extends Controller
 {
 
-    public function index($id)
+    public function index()
     {
 
-        $provider = Provider::with('office')->find($id);
-        dd($provider->office->officeName);
+        $provider = Provider::get();
+        // dd($provider);
         return view('SearchAboutProvider', ['provider' => $provider]);
     }
     public function search(Request $request)

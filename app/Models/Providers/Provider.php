@@ -19,8 +19,8 @@ class Provider extends Model
     {
         return $this->belongsTo(office::class, 'officeId');
     }
-    public function Service()
+    public function services()
     {
-        return $this->hasMany(Service::class);
+        return $this->hasMany(Service::class, 'providerId');
     }
 }

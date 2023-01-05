@@ -108,6 +108,6 @@ Route::get('supplier-service', function () {
 });
 
 Route::controller(App\Http\Controllers\Providers\ProviderController::class)->group(function () {
-    Route::get('/FilteProvider/{id}',  'index');
+    Route::get('/FilteProvider',  'index');
     Route::get('search', 'search');
 });
