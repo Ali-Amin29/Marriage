@@ -3,8 +3,9 @@
 namespace App\Http\Controllers\Providers;
 
 use App\Models\Providers\Provider;
-use App\Models\Offices\Office;
+use App\Models\cities\City;
 use App\Models\Services\Service;
+
 
 use App\Http\Controllers\Controller;
 
@@ -16,15 +17,21 @@ class ProviderController extends Controller
     public function index()
     {
 
-        $provider = Provider::get();
+        $provider = Provider::with('cities', 'services')->get();
         // dd($provider);
-        return view('SearchAboutProvider', ['provider' => $provider]);
+        $services = Service::get();
+
+        // foreach ($offices as $c) {
+        //     dd($c->cities);
+        // }
+        // dd($offices);
+        return view('SearchAboutProvider', ['provider' => $provider, 'services' => $services]);
     }
     public function search(Request $request)
     {
         if ($request->search) {
-            $provider = Provider::where('name', 'like', '%' . $request->search . '%')
-                ->orwhere('OfficeName', 'like', '%' . $request->search . '%')->get();
+            $provider = Provider::where('name', 'like', '%' . $request->search . '%')->get();
+            // ->orwhere('OfficeName', 'like', '%' . $request->search . '%')
             return view('SearchAboutProvider', ['provider' =>  $provider]);
         } else {
         }
