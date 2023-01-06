@@ -1,17 +1,16 @@
 <?php
 
-namespace App\Models\Offices;
+namespace App\Models\cities;
 
 use App\Models\Providers\Provider;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Office extends Model
+class City extends Model
 {
     use HasFactory;
-    protected $fillable = [
-        'officeName', 'rate',
-    ];
+    protected $fillable = ['city'];
+
     public function provider()
     {
         return $this->hasMany(Provider::class);

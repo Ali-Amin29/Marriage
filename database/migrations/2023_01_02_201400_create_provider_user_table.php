@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('provider_user', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('userId');
-            $table->foreignId('providerId');
-            $table->date('subscriptionDate');
+            $table->foreignId('userId')->nullable();
+            $table->foreignId('providerId')->nullable();
+            $table->date('subscriptionDate')->nullable();
             $table->enum('status', ['accept', 'reject'])->default('reject');
             $table->timestamps('');
         });

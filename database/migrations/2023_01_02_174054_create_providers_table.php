@@ -17,12 +17,13 @@ return new class extends Migration
             $table->id();
             $table->string('phone')->nullable();
             $table->string('password')->nullable();
-            $table->foreignId('officeId');
             $table->string('name')->nullable();
             $table->string('idNumber')->nullable();
+            $table->decimal('rate', 2, 1)->nullable();
+            $table->foreignId('cityId')->nullable();
             $table->string('officeDescription')->nullable();
             $table->string('bankAccountNumber')->nullable();
-            $table->string('providerImage');
+            $table->string('providerImage')->nullable();
             $table->timestamps();
         });
     }

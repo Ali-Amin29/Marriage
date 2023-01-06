@@ -15,8 +15,9 @@ return new class extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('providerId');
-            $table->string('name');
+            $table->foreignId('providerId')->nullable();
+            $table->string('name')->nullable();
+            $table->integer('subscriptionNumber')->default(NULL);
             $table->timestamps();
         });
     }
